@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Kuzey</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery eklendi -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+            var nav = $('#navbar');
+            var navHeight = nav.outerHeight();
+            var sticky = nav.offset().top;
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= sticky) {
+                    nav.addClass('fixed-top');
+                } else {
+                    nav.removeClass('fixed-top');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="bg-dark-blue">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='anasayfa.html'"><h5>Anasayfa</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='hakkimizda.html'"><h5>Hakkımızda</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='menu.html'"><h5>Menü</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='sosyalsorumluluk.html'"><h5>Sosyal Sorumluluk</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='iletisim.html'"><h5>İletişim</h5></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="hakkimizda-container">
+        <h1>Hakkımızda</h1><br>
+        <p>Kuzey Restoranı, lezzetli yemekler, misafirperverlik ve unutulmaz bir deneyim sunmak için kurulmuştur. Misafirlerimizi, özenle seçilmiş malzemelerle hazırlanan nefis yemeklerle ağırlıyoruz ve onlara sıcak bir ortamda rahat bir deneyim yaşatıyoruz. Mutfak ekibimiz, geleneksel ve modern tatları bir araya getirerek özgün tarifler üretiyor. Yemeklerimizde kullanılan taze ve yerel malzemelerle, her lokmanın tadını en üst düzeye çıkarıyoruz. Menümüzdeki çeşitlilik, her zevke ve ihtiyaca hitap ediyor. Kuzey Restoranı'nda misafirlerimizi ailemizin bir parçası gibi görüyoruz. Profesyonel ve güleryüzlü personelimiz, her misafirimize özenle ve özel bir hizmet sunmayı ilke edinmiştir. Memnuniyetleri bizim için en önemli önceliktir. Kuzey Restoranı, lezzetli yemeklerin yanı sıra unutulmaz bir deneyim sunar. Her detayı özenle düşünülmüş olan restoranımız, şık ve modern bir atmosferde konuklarını ağırlar. Her ziyaretinizde, lezzet, hizmet ve ortamın mükemmel bir uyum içinde olduğunu hissedeceksiniz. Kuzey Restoranı'nda sıcak bir atmosferde, lezzetli yemeklerin keyfini çıkarın ve unutulmaz anılarla dolu bir deneyim yaşayın. Sizleri aramızda görmekten mutluluk duyacağız.</p>
+    </div>
+        <img src="30.jpg" alt="" class="alt-resim" width="">       
+</body>
+</html>

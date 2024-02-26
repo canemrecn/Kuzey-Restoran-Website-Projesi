@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Kuzey</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- jQuery eklendi -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function() {
+            var nav = $('#navbar');
+            var navHeight = nav.outerHeight();
+            var sticky = nav.offset().top;
+
+            $(window).scroll(function() {
+                if ($(window).scrollTop() >= sticky) {
+                    nav.addClass('fixed-top');
+                } else {
+                    nav.removeClass('fixed-top');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <header class="bg-dark-blue">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='anasayfa.html'"><h5>Anasayfa</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='hakkimizda.html'"><h5>Hakkımızda</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='menu.html'"><h5>Menü</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='sosyalsorumluluk.html'"><h5>Sosyal Sorumluluk</h5></button>
+                        </li>
+                        <li class="nav-item">
+                            <button class="nav-link btn btn-dark" onclick="window.location.href='iletisim.html'"><h5>İletişim</h5></button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <img src="menu.jpg" alt=""><br>
